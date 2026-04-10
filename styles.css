@@ -399,6 +399,62 @@ h2 {
     letter-spacing: 0.02em;
 }
 
+/* ─── EDUCATION ────────────────────────────────────────── */
+.edu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+}
+
+.edu-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.75rem;
+    transition: border-color 0.2s;
+}
+
+.edu-card:hover { border-color: rgba(0, 180, 216, 0.3); }
+
+.edu-degree {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.2rem;
+}
+
+.edu-school {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 0.3rem;
+}
+
+.edu-meta {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.85rem;
+}
+
+.dates-inline {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+.edu-card p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+}
+
+.edu-card strong { color: var(--text); }
+
+/* ─── EXPERIENCE — extra ───────────────────────────────── */
+.exp-item strong { color: var(--text); }
+
 /* ─── PROJECTS ─────────────────────────────────────────── */
 .projects-grid {
     display: grid;
@@ -410,7 +466,7 @@ h2 {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 10px;
-    padding: 1.75rem;
+    overflow: hidden;
     transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
     display: flex;
     flex-direction: column;
@@ -424,14 +480,28 @@ h2 {
 
 .project-card.featured {
     border-color: rgba(0, 180, 216, 0.22);
-    background: linear-gradient(145deg, var(--surface) 0%, rgba(0, 180, 216, 0.03) 100%);
+}
+
+.project-img {
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+    display: block;
+    background: var(--surface-2);
+}
+
+.project-card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .project-top {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
-    margin-bottom: 1rem;
+    margin-bottom: 0.85rem;
 }
 
 .project-tag {
@@ -460,13 +530,21 @@ h2 {
     margin-bottom: 1.25rem;
 }
 
+.project-card strong { color: var(--text); }
+
+.project-links {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .project-link {
     font-size: 0.82rem;
     font-weight: 600;
     color: var(--primary);
     letter-spacing: 0.04em;
     transition: color 0.2s;
-    align-self: flex-start;
 }
 
 .project-link:hover { color: #00c8f0; }
