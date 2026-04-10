@@ -490,6 +490,28 @@ h2 {
     background: var(--surface-2);
 }
 
+.project-img--code {
+    object-fit: unset;
+    background: #0d1117;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 180, 216, 0.12);
+}
+
+.code-preview {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    line-height: 2;
+    padding: 0.5rem 1rem;
+}
+
+.code-line { white-space: nowrap; }
+
+.ct-key  { color: #79c0ff; }
+.ct-fn   { color: #d2a8ff; }
+.ct-dim  { color: #484f58; }
+
 .project-card-body {
     padding: 1.5rem;
     display: flex;

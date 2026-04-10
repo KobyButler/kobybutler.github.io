@@ -219,7 +219,7 @@
 
             <!-- SH Fishing — FIRST -->
             <div class="project-card">
-                <img class="project-img" src="https://shfishing.org/uploads/gallery/sh-fishing-hero.jpg" alt="SH Fishing – Fish Lake Utah guided fishing charters" loading="lazy">
+                <img class="project-img" src="https://shfishing.org/uploads/gallery/sh-fishing-hero.jpg" alt="SH Fishing – Fish Lake Utah guided fishing charters" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='https://shfishing.org/uploads/gallery/sh-fishing-catch-01.jpg'">
                 <div class="project-card-body">
                     <div class="project-top">
                         <span class="project-tag">Web</span>
@@ -233,7 +233,14 @@
 
             <!-- Record360 Tool Package -->
             <div class="project-card featured">
-                <img class="project-img" src="https://opengraph.githubassets.com/1/KobyButler/r360-tool-package" alt="Record360 Tool Package GitHub preview" loading="lazy">
+                <div class="project-img project-img--code" aria-hidden="true">
+                    <div class="code-preview">
+                        <div class="code-line"><span class="ct-key">const</span> wf = <span class="ct-fn">createWorkflow</span><span class="ct-dim">();</span></div>
+                        <div class="code-line"><span class="ct-fn">exportJSON</span><span class="ct-dim">( wf );</span></div>
+                        <div class="code-line"><span class="ct-key">chrome</span><span class="ct-dim">.</span><span class="ct-fn">tabs</span><span class="ct-dim">.</span><span class="ct-fn">inject</span><span class="ct-dim">( media );</span></div>
+                        <div class="code-line"><span class="ct-key">await</span> <span class="ct-fn">triggerEmail</span><span class="ct-dim">( template );</span></div>
+                    </div>
+                </div>
                 <div class="project-card-body">
                     <div class="project-top">
                         <span class="project-tag">Chrome Extension</span>
