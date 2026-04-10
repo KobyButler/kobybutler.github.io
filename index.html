@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Koby Butler — Software Engineer</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -16,7 +16,7 @@
     <!-- NAV -->
     <header>
         <div class="container nav-inner">
-            <a href="#" class="logo">Koby Butler</a>
+            <a href="#" class="logo">KB<span class="logo-dot">.</span></a>
             <nav>
                 <div class="menu-toggle" id="menuToggle">
                     <span></span><span></span><span></span>
@@ -24,8 +24,8 @@
                 <div class="nav-links" id="navLinks">
                     <a href="#hero">Home</a>
                     <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
                     <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                 </div>
@@ -34,32 +34,44 @@
     </header>
 
     <!-- HERO -->
-    <section id="hero" class="container">
-        <div class="hero-img">
-            <img src="profile.jpg" alt="Koby Butler">
-        </div>
-        <div class="hero-text">
-            <h1>Hi, I’m Koby</h1>
-            <p>Software Engineer specializing in embedded systems, full-stack web, and automation. I build tools that
-                save hundreds of hours and drive real business impact.</p>
+    <section id="hero">
+        <div class="container hero-inner">
+            <div class="hero-img">
+                <img src="profile.jpg" alt="Koby Butler">
+            </div>
+            <div class="hero-text">
+                <div class="hero-label">Software Engineer</div>
+                <h1>Hi, I'm <span class="gradient-text">Koby</span></h1>
+                <p>Specializing in embedded systems, full-stack web, and automation. I build tools that save hundreds of hours and drive real business impact.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>I’m currently a Technical Support Specialist at <strong>Record360</strong>, where I designed and implemented
+    <section id="about" class="container section-block">
+        <div class="section-header">
+            <span class="section-tag">// about</span>
+            <h2>About Me</h2>
+        </div>
+        <p>I'm currently a Technical Support Specialist at <strong>Record360</strong>, where I designed and implemented
             custom automation tools that saved the company over <strong>300 hours per quarter</strong> in manual work. I
-            thrive on problem solving and enginuitive thinking, turning complex requirements into
-            streamlined solutions.</p>
+            thrive on problem solving and ingenious thinking, turning complex requirements into streamlined solutions.</p>
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience" class="container">
-        <h2>Experience</h2>
+    <section id="experience" class="container section-block">
+        <div class="section-header">
+            <span class="section-tag">// experience</span>
+            <h2>Experience</h2>
+        </div>
         <ul class="exp-list">
             <li class="exp-item">
-                <h3>Technical Support Specialist, Record360</h3>
+                <div class="exp-dot"></div>
+                <h3>Technical Support Specialist <span class="exp-company">@ Record360</span></h3>
                 <div class="dates">May 2022 – Present</div>
                 <p>
                     Designed and delivered a JSON generation-and-conversion automation suite that
@@ -69,7 +81,8 @@
                 </p>
             </li>
             <li class="exp-item">
-                <h3>Member, “Racing the Sun – Autonomously” Team</h3>
+                <div class="exp-dot"></div>
+                <h3>Member <span class="exp-company">@ "Racing the Sun – Autonomously" Team</span></h3>
                 <div class="dates">2024 – Present</div>
                 <p>
                     Engineered real-time edge-detection and control algorithms in Python/OpenCV
@@ -79,11 +92,12 @@
                 </p>
             </li>
             <li class="exp-item">
-                <h3>Bachelor of Science in Software Engineering, University of Arizona</h3>
+                <div class="exp-dot"></div>
+                <h3>Bachelor of Science in Software Engineering <span class="exp-company">@ University of Arizona</span></h3>
                 <div class="dates">2018 – 2022</div>
                 <p>
                     Graduated with honors after completing rigorous coursework in software
-                    architecture, data structures & algorithms, network programming, and Agile
+                    architecture, data structures &amp; algorithms, network programming, and Agile
                     development methodologies. Mastered full-stack design principles and team
                     collaboration practices.
                 </p>
@@ -92,110 +106,144 @@
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="container">
-        <h2>Skills & Technologies</h2>
+    <section id="skills" class="container section-block">
+        <div class="section-header">
+            <span class="section-tag">// skills</span>
+            <h2>Skills &amp; Technologies</h2>
+        </div>
         <div class="skill-list">
             <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
                 <div>Python</div>
             </div>
             <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
                 <div>JavaScript</div>
             </div>
             <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
                 <div>Java</div>
             </div>
             <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="Ruby">
                 <div>Ruby</div>
             </div>
             <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular">
                 <div>Angular</div>
             </div>
             <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
                 <div>Node.js</div>
             </div>
             <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 & CSS3">
                 <div>HTML5 &amp; CSS3</div>
             </div>
             <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
                 <div>Docker</div>
             </div>
             <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git & GitHub">
                 <div>Git &amp; GitHub</div>
             </div>
             <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
                 <div>Linux</div>
             </div>
             <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL & MSSQL">
                 <div>MySQL &amp; MSSQL</div>
             </div>
             <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C & C++">
                 <div>C &amp; C++</div>
             </div>
             <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQL & PL/SQL">
                 <div>SQL &amp; PL/SQL</div>
             </div>
             <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/networkx/networkx-original.svg" alt="">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/networkx/networkx-original.svg" alt="Networking">
                 <div>Networking</div>
             </div>
             <div class="skill-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Agile & Jira">
                 <div>Agile &amp; Jira</div>
             </div>
         </div>
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="container">
-        <h2>Featured Projects</h2>
-        <div class="project-card">
-            <h4>Record360 Tool Package</h4>
-            <p>
-                A unified Chrome extension that bundles workflow creation, workflow export, email-trigger template
-                generation, and inline-media injection
-                into Record360—automating tedious tasks and saving hundreds of hours.
-            </p>
-            <a href="https://github.com/KobyButler/r360-tool-package" target="_blank">
-                View on GitHub →
-            </a>
+    <section id="projects" class="container section-block">
+        <div class="section-header">
+            <span class="section-tag">// projects</span>
+            <h2>Featured Projects</h2>
         </div>
         <div class="projects-grid">
+            <div class="project-card featured">
+                <div class="project-top">
+                    <span class="project-tag">Chrome Extension</span>
+                    <span class="project-tag">Automation</span>
+                </div>
+                <h4>Record360 Tool Package</h4>
+                <p>A unified Chrome extension bundling workflow creation, export, email-trigger template generation, and inline-media injection into Record360—automating tedious tasks and saving hundreds of hours.</p>
+                <a href="https://github.com/KobyButler/r360-tool-package" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
+            </div>
             <div class="project-card">
+                <div class="project-top">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">OpenCV</span>
+                    <span class="project-tag">Embedded</span>
+                </div>
                 <h4>Racing the Sun – Autonomy</h4>
-                <p>Edge detection & control software for solar racecar; parallel OpenCV pipelines on Raspberry Pis, data
-                    stitching to master node, real-time steering decisions.</p>
-                <a href="https://github.com/KobyButler/Racing-the-Sun-Autonomously/tree/main" target="_blank">View on
-                    GitHub →</a>
+                <p>Edge detection &amp; control software for a solar-powered autonomous racecar. Parallel OpenCV pipelines on Raspberry Pis with data stitching to a master node for real-time steering decisions.</p>
+                <a href="https://github.com/KobyButler/Racing-the-Sun-Autonomously/tree/main" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
+            </div>
+            <div class="project-card">
+                <div class="project-top">
+                    <span class="project-tag">Web</span>
+                    <span class="project-tag">Full-Stack</span>
+                </div>
+                <h4>SH Fishing</h4>
+                <p>Designed and deployed a full professional web presence for a fishing guide service, including trip information, media, and contact features.</p>
+                <a href="https://shfishing.org" target="_blank" rel="noopener noreferrer" class="project-link">Visit Site →</a>
             </div>
         </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <ul>
-            <li>Email: <a href="mailto:koby.butler102@gmail.com">koby.butler102@gmail.com</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/koby-butler" target="_blank">/in/koby-butler</a></li>
-            <li>GitHub: <a href="https://github.com/KobyButler" target="_blank">KobyButler</a></li>
-        </ul>
+    <section id="contact" class="container section-block">
+        <div class="section-header">
+            <span class="section-tag">// contact</span>
+            <h2>Get In Touch</h2>
+        </div>
+        <div class="contact-grid">
+            <a href="mailto:koby.butler102@gmail.com" class="contact-card">
+                <div class="contact-icon">✉</div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value">koby.butler102@gmail.com</div>
+            </a>
+            <a href="https://www.linkedin.com/in/koby-butler" target="_blank" rel="noopener noreferrer" class="contact-card">
+                <div class="contact-icon">in</div>
+                <div class="contact-label">LinkedIn</div>
+                <div class="contact-value">/in/koby-butler</div>
+            </a>
+            <a href="https://github.com/KobyButler" target="_blank" rel="noopener noreferrer" class="contact-card">
+                <div class="contact-icon">&lt;/&gt;</div>
+                <div class="contact-label">GitHub</div>
+                <div class="contact-value">KobyButler</div>
+            </a>
+        </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <div class="container">&copy; 2025 Koby Butler</div>
+        <div class="container footer-inner">
+            <span class="logo">KB<span class="logo-dot">.</span></span>
+            <span>&copy; 2026 Koby Butler. Built with precision.</span>
+        </div>
     </footer>
 
     <script>
@@ -204,16 +252,21 @@
         const nav = document.getElementById('navLinks');
         toggle.addEventListener('click', () => nav.classList.toggle('open'));
 
-        // Flash highlight on section focus
-        document.querySelectorAll('header nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                const targetId = link.getAttribute('href').substring(1);
-                const section = document.getElementById(targetId);
-                if (section) {
-                    section.classList.add('flash-highlight');
-                    section.addEventListener('animationend', () => {
-                        section.classList.remove('flash-highlight');
-                    }, { once: true });
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                if (window.scrollY >= section.offsetTop - 120) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
                 }
             });
         });
