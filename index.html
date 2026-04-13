@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Koby Butler — Software Engineer</title>
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,7 +12,7 @@
 <body>
 
     <!-- NAV -->
-    <header>
+    <header id="header">
         <div class="container nav-inner">
             <a href="#" class="logo">KB<span class="logo-dot">.</span></a>
             <nav>
@@ -36,15 +34,17 @@
 
     <!-- HERO -->
     <section id="hero">
+        <div class="hero-bg-grid"></div>
         <div class="container hero-inner">
-            <div class="hero-img">
+            <div class="hero-img" data-hero="img">
+                <div class="hero-img-ring"></div>
                 <img src="profile.jpg" alt="Koby Butler">
             </div>
             <div class="hero-text">
-                <div class="hero-label">Software Engineer</div>
-                <h1>Hi, I'm <span class="gradient-text">Koby</span></h1>
-                <p>Specializing in embedded systems, full-stack web, and automation. I build tools that save hundreds of hours and drive real business impact.</p>
-                <div class="hero-cta">
+                <div class="hero-label" id="heroLabel" data-hero="1"></div>
+                <h1 data-hero="2">Hi, I'm <span class="gradient-text">Koby</span></h1>
+                <p data-hero="3">Specializing in embedded systems, full-stack web, and automation. I build tools that save hundreds of hours and drive real business impact.</p>
+                <div class="hero-cta" data-hero="4">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
                     <a href="#contact" class="btn btn-outline">Get In Touch</a>
                 </div>
@@ -54,59 +54,71 @@
 
     <!-- ABOUT -->
     <section id="about" class="container section-block">
-        <div class="section-header">
+        <div class="section-header reveal">
             <span class="section-tag">// about</span>
             <h2>About Me</h2>
         </div>
-        <p>Detail-oriented software engineer with hands-on proficiency in Angular, JavaScript, SQL, Python, and embedded systems. I develop innovative tools that streamline workflow processes and enhance efficiency. I leverage strong debugging, problem-solving, and collaboration skills to troubleshoot and optimize enterprise applications — with a track record of delivering measurable time and cost savings.</p>
+        <p class="reveal" data-delay="1">
+            Detail-oriented software engineer with hands-on proficiency in Angular, JavaScript, SQL, Python, and embedded systems.
+            I develop innovative tools that streamline workflow processes and enhance efficiency — with a track record of
+            delivering measurable time and cost savings across enterprise applications.
+        </p>
     </section>
 
     <!-- EXPERIENCE -->
     <section id="experience" class="container section-block">
-        <div class="section-header">
+        <div class="section-header reveal">
             <span class="section-tag">// experience</span>
             <h2>Experience</h2>
         </div>
         <ul class="exp-list">
-            <li class="exp-item">
+            <li class="exp-item reveal" data-delay="1">
                 <div class="exp-dot"></div>
                 <h3>Nuclear Software &amp; Computer Operations Engineer <span class="exp-company">@ Valar Atomics</span></h3>
                 <div class="dates">08/2025 – Present &nbsp;·&nbsp; Orangeville, UT</div>
                 <p>
                     Developed software solutions to improve operational efficiency and coordination within a nuclear HTGR environment.
                     Executed validation tests, documented results, and collaborated with engineering teams for troubleshooting.
-                    Built and maintained custom tools to track requests and display progress, enhancing visibility and coordination across teams.
+                    Built and maintained custom tools to track requests and display progress, enhancing visibility and coordination.
                     Operated and monitored complex systems following strict procedures and safety requirements.
                 </p>
             </li>
-            <li class="exp-item">
+            <li class="exp-item reveal" data-delay="2">
                 <div class="exp-dot"></div>
                 <h3>Support Engineer <span class="exp-company">@ Record360</span></h3>
                 <div class="dates">07/2023 – 08/2025 &nbsp;·&nbsp; Remote</div>
                 <p>
                     Developed and maintained software solutions using React, Angular, TypeScript, JavaScript, and JSON.
-                    Designed and implemented a workflow editing tool for customers, reducing manual support by <strong>40%</strong>.
-                    Created a Chrome extension for workflow configuration, saving <strong>200+ hours annually</strong> and increasing operational productivity.
-                    Collaborated with cross-functional engineering teams to debug software issues, provide feedback, and contribute to product improvement roadmaps.
+                    Designed and implemented a workflow editing tool, reducing manual support by
+                    <strong><span class="counter" data-target="40">40</span>%</strong>.
+                    Built a Chrome extension for workflow configuration, saving
+                    <strong><span class="counter" data-target="200">200</span>+ hours annually</strong>
+                    and increasing operational productivity.
+                    Collaborated with cross-functional engineering teams to debug software issues and contribute to product roadmaps.
                 </p>
             </li>
-            <li class="exp-item">
+            <li class="exp-item reveal" data-delay="3">
                 <div class="exp-dot"></div>
-                <h3>Member <span class="exp-company">@ "Racing the Sun – Autonomously" Capstone Team</span></h3>
+                <h3>Capstone Team Member <span class="exp-company">@ "Racing the Sun – Autonomously"</span></h3>
                 <div class="dates">2024 – 2025 &nbsp;·&nbsp; University of Arizona</div>
                 <p>
                     Engineered real-time edge-detection and control algorithms in Python/OpenCV and Arduino C for a solar-powered autonomous go-kart.
-                    The vehicle completed two independent laps without a driver and earned the <strong>Sharon O'Neal Award for Best System Software and Design</strong> at Craig M. Berge Design Day, December 2025.
+                    The vehicle completed two independent laps without a driver and earned the
+                    <strong>Sharon O'Neal Award for Best System Software and Design</strong>
+                    at Craig M. Berge Design Day, December 2025.
                     Contributed to system architecture, data-pipeline design, and on-vehicle integration.
                 </p>
             </li>
-            <li class="exp-item">
+            <li class="exp-item reveal" data-delay="4">
                 <div class="exp-dot"></div>
                 <h3>Tech Support Analyst <span class="exp-company">@ Alleva</span></h3>
                 <div class="dates">03/2022 – 07/2023 &nbsp;·&nbsp; Remote</div>
                 <p>
-                    Engineered software solutions to support EMR software for <strong>150+ customers weekly</strong>, ensuring robust system performance.
-                    Managed SQL Server databases, optimizing queries to improve customer issue resolution efficiency by <strong>20%</strong>.
+                    Engineered software solutions supporting EMR software for
+                    <strong><span class="counter" data-target="150">150</span>+ customers weekly</strong>,
+                    ensuring robust system performance.
+                    Managed SQL Server databases, optimizing queries to improve issue resolution efficiency by
+                    <strong><span class="counter" data-target="20">20</span>%</strong>.
                     Documented and escalated software bugs and enhancement requests to inform product roadmap decisions.
                 </p>
             </li>
@@ -115,18 +127,18 @@
 
     <!-- EDUCATION -->
     <section id="education" class="container section-block">
-        <div class="section-header">
+        <div class="section-header reveal">
             <span class="section-tag">// education</span>
             <h2>Education</h2>
         </div>
         <div class="edu-grid">
-            <div class="edu-card">
+            <div class="edu-card reveal" data-delay="1">
                 <div class="edu-degree">B.S. Software Engineering</div>
                 <div class="edu-school">University of Arizona</div>
                 <div class="edu-meta">Tucson, AZ &nbsp;·&nbsp; <span class="dates-inline">2020 – December 2025</span></div>
                 <p>Received <strong>"Best Software Design"</strong> for Capstone project — a full-stack autonomous go-kart system that completed two driverless laps at competition.</p>
             </div>
-            <div class="edu-card">
+            <div class="edu-card reveal" data-delay="2">
                 <div class="edu-degree">Computer Engineering</div>
                 <div class="edu-school">Brigham Young University</div>
                 <div class="edu-meta">Provo, UT &nbsp;·&nbsp; <span class="dates-inline">2023</span></div>
@@ -137,72 +149,72 @@
 
     <!-- SKILLS -->
     <section id="skills" class="container section-block">
-        <div class="section-header">
+        <div class="section-header reveal">
             <span class="section-tag">// skills</span>
             <h2>Skills &amp; Technologies</h2>
         </div>
         <div class="skill-list">
-            <div class="skill-item">
+            <div class="skill-item reveal" data-delay="1">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
                 <div>Python</div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item reveal" data-delay="2">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
                 <div>JavaScript</div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item reveal" data-delay="3">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
                 <div>TypeScript</div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item reveal" data-delay="4">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
                 <div>React</div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item reveal" data-delay="5">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
                 <div>Java</div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item reveal" data-delay="6">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="Ruby">
                 <div>Ruby</div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item reveal" data-delay="7">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular">
                 <div>Angular</div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item reveal" data-delay="8">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
                 <div>Node.js</div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item reveal" data-delay="9">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 & CSS3">
                 <div>HTML5 &amp; CSS3</div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item reveal" data-delay="10">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
                 <div>Docker</div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item reveal" data-delay="11">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git & GitHub">
                 <div>Git &amp; GitHub</div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item reveal" data-delay="12">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
                 <div>Linux</div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item reveal" data-delay="13">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL & MSSQL">
                 <div>MySQL &amp; MSSQL</div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item reveal" data-delay="14">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C & C++">
                 <div>C &amp; C++</div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item reveal" data-delay="15">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQL & PL/SQL">
                 <div>SQL &amp; PL/SQL</div>
             </div>
-            <div class="skill-item">
+            <div class="skill-item reveal" data-delay="16">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" alt="Agile & Jira">
                 <div>Agile &amp; Jira</div>
             </div>
@@ -211,15 +223,15 @@
 
     <!-- PROJECTS -->
     <section id="projects" class="container section-block">
-        <div class="section-header">
+        <div class="section-header reveal">
             <span class="section-tag">// projects</span>
             <h2>Featured Projects</h2>
         </div>
         <div class="projects-grid">
 
-            <!-- SH Fishing — FIRST -->
-            <div class="project-card">
-                <img class="project-img" src="https://shfishing.org/uploads/gallery/sh-fishing-hero.jpg" alt="SH Fishing – Fish Lake Utah guided fishing charters" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='https://shfishing.org/uploads/gallery/sh-fishing-catch-01.jpg'">
+            <!-- SH Fishing -->
+            <div class="project-card reveal" data-delay="1">
+                <img class="project-img project-img--logo" src="images/sh-fishing-logo.jpg" alt="SH Fishing – guided fishing charters on Fish Lake, UT" loading="lazy">
                 <div class="project-card-body">
                     <div class="project-top">
                         <span class="project-tag">Web</span>
@@ -232,13 +244,14 @@
             </div>
 
             <!-- Record360 Tool Package -->
-            <div class="project-card featured">
+            <div class="project-card featured reveal" data-delay="2">
                 <div class="project-img project-img--code" aria-hidden="true">
                     <div class="code-preview">
                         <div class="code-line"><span class="ct-key">const</span> wf = <span class="ct-fn">createWorkflow</span><span class="ct-dim">();</span></div>
                         <div class="code-line"><span class="ct-fn">exportJSON</span><span class="ct-dim">( wf );</span></div>
                         <div class="code-line"><span class="ct-key">chrome</span><span class="ct-dim">.</span><span class="ct-fn">tabs</span><span class="ct-dim">.</span><span class="ct-fn">inject</span><span class="ct-dim">( media );</span></div>
                         <div class="code-line"><span class="ct-key">await</span> <span class="ct-fn">triggerEmail</span><span class="ct-dim">( template );</span></div>
+                        <div class="code-line ct-cursor-line"><span class="ct-dim">// </span><span class="ct-blink">▍</span></div>
                     </div>
                 </div>
                 <div class="project-card-body">
@@ -247,13 +260,13 @@
                         <span class="project-tag">Automation</span>
                     </div>
                     <h4>Record360 Tool Package</h4>
-                    <p>A unified Chrome extension bundling workflow creation, export, email-trigger template generation, and inline-media injection into Record360 — automating tedious tasks and saving 200+ hours annually.</p>
+                    <p>A unified Chrome extension bundling workflow creation, export, email-trigger template generation, and inline-media injection into Record360 — saving 200+ hours annually.</p>
                     <a href="https://github.com/KobyButler/r360-tool-package" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
                 </div>
             </div>
 
             <!-- Racing the Sun -->
-            <div class="project-card">
+            <div class="project-card reveal" data-delay="3">
                 <img class="project-img" src="https://icap.engineering.arizona.edu/sites/default/files/styles/az_large/public/2026-01/RTS_Webedit.jpg.webp" alt="Racing the Sun autonomous go-kart at Musselman Honda Circuit" loading="lazy">
                 <div class="project-card-body">
                     <div class="project-top">
@@ -262,7 +275,7 @@
                         <span class="project-tag">Embedded</span>
                     </div>
                     <h4>Racing the Sun – Autonomy</h4>
-                    <p>Edge detection &amp; control software for a solar-powered autonomous go-kart. Parallel OpenCV pipelines on Raspberry Pis with real-time steering decisions. Won <strong>Best System Software &amp; Design</strong> at UA Design Day 2025.</p>
+                    <p>Edge detection &amp; control software for a solar-powered autonomous go-kart. Parallel OpenCV pipelines on Raspberry Pis with real-time steering. Won <strong>Best System Software &amp; Design</strong> at UA Design Day 2025.</p>
                     <div class="project-links">
                         <a href="https://github.com/KobyButler/Racing-the-Sun-Autonomously/tree/main" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
                         <a href="https://icap.engineering.arizona.edu/news/autonomous-go-kart-races-past-finish-line" target="_blank" rel="noopener noreferrer" class="project-link">UA Feature →</a>
@@ -275,22 +288,22 @@
 
     <!-- CONTACT -->
     <section id="contact" class="container section-block">
-        <div class="section-header">
+        <div class="section-header reveal">
             <span class="section-tag">// contact</span>
             <h2>Get In Touch</h2>
         </div>
         <div class="contact-grid">
-            <a href="mailto:koby.butler102@gmail.com" class="contact-card">
+            <a href="mailto:koby.butler102@gmail.com" class="contact-card reveal" data-delay="1">
                 <div class="contact-icon">✉</div>
                 <div class="contact-label">Email</div>
                 <div class="contact-value">koby.butler102@gmail.com</div>
             </a>
-            <a href="https://www.linkedin.com/in/koby-butler" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <a href="https://www.linkedin.com/in/koby-butler" target="_blank" rel="noopener noreferrer" class="contact-card reveal" data-delay="2">
                 <div class="contact-icon">in</div>
                 <div class="contact-label">LinkedIn</div>
                 <div class="contact-value">/in/koby-butler</div>
             </a>
-            <a href="https://github.com/KobyButler" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <a href="https://github.com/KobyButler" target="_blank" rel="noopener noreferrer" class="contact-card reveal" data-delay="3">
                 <div class="contact-icon">&lt;/&gt;</div>
                 <div class="contact-label">GitHub</div>
                 <div class="contact-value">KobyButler</div>
@@ -307,30 +320,97 @@
     </footer>
 
     <script>
-        // Mobile nav toggle
+    (() => {
+        /* ── Mobile nav ─────────────────────────────── */
         const toggle = document.getElementById('menuToggle');
-        const nav = document.getElementById('navLinks');
-        toggle.addEventListener('click', () => nav.classList.toggle('open'));
+        const navEl   = document.getElementById('navLinks');
+        toggle.addEventListener('click', () => navEl.classList.toggle('open'));
 
-        // Active nav link on scroll
+        /* ── Active nav on scroll ───────────────────── */
         const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.nav-links a');
-
+        const navLinks  = document.querySelectorAll('.nav-links a');
         window.addEventListener('scroll', () => {
             let current = '';
-            sections.forEach(section => {
-                if (window.scrollY >= section.offsetTop - 120) {
-                    current = section.getAttribute('id');
-                }
+            sections.forEach(s => {
+                if (window.scrollY >= s.offsetTop - 130) current = s.id;
             });
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
-                }
+            navLinks.forEach(l => {
+                l.classList.toggle('active', l.getAttribute('href') === '#' + current);
+            });
+        }, { passive: true });
+
+        /* ── Header shadow on scroll ────────────────── */
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 40);
+        }, { passive: true });
+
+        /* ── Hero entrance sequence ─────────────────── */
+        const heroImg   = document.querySelector('[data-hero="img"]');
+        const heroItems = document.querySelectorAll('[data-hero]');
+        setTimeout(() => heroImg.classList.add('hero-in'), 80);
+        [1, 2, 3, 4].forEach(n => {
+            const el = document.querySelector(`[data-hero="${n}"]`);
+            if (el) setTimeout(() => el.classList.add('hero-in'), 200 + n * 160);
+        });
+
+        /* ── Typewriter ─────────────────────────────── */
+        const label = document.getElementById('heroLabel');
+        const words = ['Software Engineer', 'Full-Stack Developer', 'Embedded Systems'];
+        let wi = 0, ci = 0, deleting = false;
+        function type() {
+            const word = words[wi];
+            label.textContent = deleting ? word.slice(0, --ci) : word.slice(0, ++ci);
+            if (!deleting && ci === word.length) {
+                setTimeout(() => { deleting = true; }, 2200);
+                setTimeout(type, 2300);
+            } else if (deleting && ci === 0) {
+                deleting = false;
+                wi = (wi + 1) % words.length;
+                setTimeout(type, 400);
+            } else {
+                setTimeout(type, deleting ? 45 : 80);
+            }
+        }
+        setTimeout(type, 700);
+
+        /* ── Counter animation ──────────────────────── */
+        function animateCounter(el) {
+            if (el.dataset.animated) return;
+            el.dataset.animated = '1';
+            const target = +el.dataset.target;
+            const dur    = 1400;
+            const start  = performance.now();
+            (function step(now) {
+                const p = Math.min((now - start) / dur, 1);
+                el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+                if (p < 1) requestAnimationFrame(step);
+            })(start);
+        }
+
+        /* ── Scroll reveal ──────────────────────────── */
+        const revealObs = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const delay = +(entry.target.dataset.delay || 0) * 90;
+                setTimeout(() => {
+                    entry.target.classList.add('revealed');
+                    entry.target.querySelectorAll('.counter').forEach(animateCounter);
+                }, delay);
+                revealObs.unobserve(entry.target);
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+        /* ── Mouse-follow card glow ─────────────────── */
+        document.querySelectorAll('.project-card, .skill-item, .contact-card, .edu-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const r = card.getBoundingClientRect();
+                card.style.setProperty('--mx', `${e.clientX - r.left}px`);
+                card.style.setProperty('--my', `${e.clientY - r.top}px`);
             });
         });
+    })();
     </script>
 </body>
-
 </html>
