@@ -584,6 +584,18 @@ h2 {
 
 .edu-card strong { color: var(--text); }
 
+.edu-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--primary);
+    letter-spacing: 0.04em;
+    transition: color var(--transition);
+}
+
+.edu-link:hover { color: #00caee; }
+
 /* ═══════════════════════════════════════════════════════════
    SKILLS
 ═══════════════════════════════════════════════════════════ */
